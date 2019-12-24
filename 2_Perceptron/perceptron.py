@@ -1,4 +1,3 @@
-#import inline as inline
 import matplotlib.pyplot as plt
 import numpy as np
 
@@ -19,7 +18,7 @@ y = np.array([-1, -1, 1, 1, 1])
 def perceptron_sgd(X, Y):
     w = np.zeros(len(X[0]))     # Initialize the weight vector for the perceptron with zeros
     eta = 1                     # Set the learning rate to 1
-    epochs = 20                 # Set the number of epochs
+    epochs = 10                 # Set the number of epochs
 
     for t in range(epochs):                    # Iterate n times over the whole data set.
         for i, x in enumerate(X):              # Iterate over each sample in the data set
